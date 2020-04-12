@@ -19,10 +19,10 @@
     <h1>Olá Jesus!</h1> <!--Comenttário em HTML-->
     <p>Já coloquei Jesus no meu projeto</p>
     <script>
-        var num1 = Number.parseFloat(window.prompt('Digite um número:'))
-        var num2 = Number.parseFloat(window.prompt('Digite Outro número:'))
+        var num1 = Number(window.prompt('Digite um número:')) // Cuidado com o W
+        var num2 = Number(window.prompt('Digite Outro número:')) // Cuidado com o W
         var s = num1 + num2
-        window.alert('A soma dos Valores é ' + s) // Concatenação
+        window.alert(`A soma dos Valores ${num1} e ${num2} é igual a ${s}`) // Concatenação
     </script>
 </body>
 </html>
